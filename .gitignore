@@ -1,0 +1,4 @@
+*.user
+*.suo
+vcproj/zlib/Debug/
+vcproj/zlib/Release/

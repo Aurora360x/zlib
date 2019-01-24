@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\zlib">
+      <UniqueIdentifier>{a2897077-07ce-49fb-b15d-26d5759461d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\library">
+      <UniqueIdentifier>{75d41239-a01f-42d4-aded-4059d38c57fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\library\zlib64">
+      <UniqueIdentifier>{5b81c508-e6f9-4d2f-a7c4-3a5bfe1df090}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\zlib\zconf.h">
+      <Filter>Header Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\zlib\zlib.h">
+      <Filter>Header Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\library\zlib64\deflate.h">
+      <Filter>Source Files\library\zlib64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\library\zlib64\infblock.h">
+      <Filter>Source Files\library\zlib64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\library\zlib64\infcodes.h">
+      <Filter>Source Files\library\zlib64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\library\zlib64\inffast.h">
+      <Filter>Source Files\library\zlib64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\library\zlib64\inffixed.h">
+      <Filter>Source Files\library\zlib64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\library\zlib64\inflate.h">
+      <Filter>Source Files\library\zlib64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\library\zlib64\inftrees.h">
+      <Filter>Source Files\library\zlib64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\library\zlib64\infutil.h">
+      <Filter>Source Files\library\zlib64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\library\zlib64\trees.h">
+      <Filter>Source Files\library\zlib64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\library\zlib64\trees64.h">
+      <Filter>Source Files\library\zlib64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\library\zlib64\zconf.h">
+      <Filter>Source Files\library\zlib64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\library\zlib64\zcrypt.h">
+      <Filter>Source Files\library\zlib64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\library\zlib64\zlib.h">
+      <Filter>Source Files\library\zlib64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\library\zlib64\zutil.h">
+      <Filter>Source Files\library\zlib64</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\source\library\zlib64\adler32.cpp">
+      <Filter>Source Files\library\zlib64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\library\zlib64\crc32.cpp">
+      <Filter>Source Files\library\zlib64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\library\zlib64\deflate.cpp">
+      <Filter>Source Files\library\zlib64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\library\zlib64\gvmat32c.cpp">
+      <Filter>Source Files\library\zlib64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\library\zlib64\infblock.cpp">
+      <Filter>Source Files\library\zlib64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\library\zlib64\infcodes.cpp">
+      <Filter>Source Files\library\zlib64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\library\zlib64\inffast.cpp">
+      <Filter>Source Files\library\zlib64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\library\zlib64\inflate.cpp">
+      <Filter>Source Files\library\zlib64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\library\zlib64\inftrees.cpp">
+      <Filter>Source Files\library\zlib64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\library\zlib64\infutil.cpp">
+      <Filter>Source Files\library\zlib64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\library\zlib64\trees.cpp">
+      <Filter>Source Files\library\zlib64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\library\zlib64\zutil.cpp">
+      <Filter>Source Files\library\zlib64</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

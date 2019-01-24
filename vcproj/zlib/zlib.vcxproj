@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Xbox 360">
+      <Configuration>Debug</Configuration>
+      <Platform>Xbox 360</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Xbox 360">
+      <Configuration>Release</Configuration>
+      <Platform>Xbox 360</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{90D1F1E2-1BA9-405A-9471-F29C3A6B8252}</ProjectGuid>
+    <Keyword>Xbox360Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">
+    <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">
+    <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <ExceptionHandling>false</ExceptionHandling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PreprocessorDefinitions>_XBOX;_SECURE_SCL=1;_DEBUG</PreprocessorDefinitions>
+      <CallAttributedProfiling>Disabled</CallAttributedProfiling>
+      <AdditionalIncludeDirectories>..\..\include\zlib;..\..\source\library\zlib64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4365; 4255; 4244; 4242; 4131; 4127; 4365; 4819; 4826; 4820; 4738; 4711; 4710; 4668; 4640; 4514; 4619; 4324; 4100; 4062; 4061; </DisableSpecificWarnings>
+      <AdditionalOptions>-QVMX128 -Wall  %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <StringPooling>false</StringPooling>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>_XBOX;_SECURE_SCL=0;NDEBUG</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include\zlib;..\..\source\library\zlib64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4365; 4255; 4244; 4242; 4131; 4127; 4365; 4819; 4826; 4820; 4738; 4711; 4710; 4668; 4640; 4514; 4619; 4324; 4100; 4062; 4061; </DisableSpecificWarnings>
+      <PreschedulingOptimization>true</PreschedulingOptimization>
+      <InlineAssemblyOptimization>true</InlineAssemblyOptimization>
+      <AdditionalOptions>-QVMX128 -Wall  %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalOptions>-LTCG  %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\zlib\zconf.h" />
+    <ClInclude Include="..\..\include\zlib\zlib.h" />
+    <ClInclude Include="..\..\source\library\zlib64\deflate.h" />
+    <ClInclude Include="..\..\source\library\zlib64\infblock.h" />
+    <ClInclude Include="..\..\source\library\zlib64\infcodes.h" />
+    <ClInclude Include="..\..\source\library\zlib64\inffast.h" />
+    <ClInclude Include="..\..\source\library\zlib64\inffixed.h" />
+    <ClInclude Include="..\..\source\library\zlib64\inflate.h" />
+    <ClInclude Include="..\..\source\library\zlib64\inftrees.h" />
+    <ClInclude Include="..\..\source\library\zlib64\infutil.h" />
+    <ClInclude Include="..\..\source\library\zlib64\trees.h" />
+    <ClInclude Include="..\..\source\library\zlib64\trees64.h" />
+    <ClInclude Include="..\..\source\library\zlib64\zconf.h" />
+    <ClInclude Include="..\..\source\library\zlib64\zcrypt.h" />
+    <ClInclude Include="..\..\source\library\zlib64\zlib.h" />
+    <ClInclude Include="..\..\source\library\zlib64\zutil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\source\library\zlib64\adler32.cpp" />
+    <ClCompile Include="..\..\source\library\zlib64\crc32.cpp" />
+    <ClCompile Include="..\..\source\library\zlib64\deflate.cpp" />
+    <ClCompile Include="..\..\source\library\zlib64\gvmat32c.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\source\library\zlib64\infblock.cpp" />
+    <ClCompile Include="..\..\source\library\zlib64\infcodes.cpp" />
+    <ClCompile Include="..\..\source\library\zlib64\inffast.cpp" />
+    <ClCompile Include="..\..\source\library\zlib64\inflate.cpp" />
+    <ClCompile Include="..\..\source\library\zlib64\inftrees.cpp" />
+    <ClCompile Include="..\..\source\library\zlib64\infutil.cpp" />
+    <ClCompile Include="..\..\source\library\zlib64\trees.cpp" />
+    <ClCompile Include="..\..\source\library\zlib64\zutil.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
